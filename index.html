@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <script src="https://accounts.google.com/gsi/client"></script>
+  <script async src="https://accounts.google.com/gsi/client"></script>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -51,22 +51,48 @@
     href="https://res.cloudinary.com/demo/image/upload/v1708291093/codeant-logo-negative_transparent_wtztft.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <meta name="description" content="CodeAnt AI - Your intelligent coding companion. Experience faster development with AI-powered code assistance, real-time suggestions, and automated testing. Build better software with smart solutions for developers." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <meta name="description"
+    content="CodeAnt AI - Your intelligent coding companion. Experience faster development with AI-powered code assistance, real-time suggestions, and automated testing. Build better software with smart solutions for developers." />
   <meta name="theme-color" content="#000000" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- <link rel="apple-touch-icon" href="%https://res.cloudinary.com/demo/image/upload/v1708291093/codeant-logo-negative_transparent_wtztft.png" /> -->
   <title>CodeAnt AI</title>
-  <script type="module" crossorigin src="/assets/index-3I4WqDZe.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Z_fv1nA-.css">
+  <script type="module" crossorigin src="/assets/index-Dz4fSmWJ.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-p75eFvO8.css">
 </head>
 
 <body>
+  <!-- Loading Screen -->
+  <div id="global-loader" style="display: flex; align-items: center; justify-content: center; height: 90vh;">
+    <img src="/assets/antlogo-BxkKhXS6.svg" alt="Logo"
+      style="width: 100px; height: 100px; animation: spin-for-initial-loader 2s linear infinite;" />
+  </div>
+
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSCGD2B5" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
   <div id="root"></div>
+  <style>
+    @keyframes spin-for-initial-loader {
+
+      0%,
+      100% {
+        transform: scale(1);
+        filter: brightness(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(0.8);
+        filter: brightness(0.5);
+        opacity: 0.5;
+      }
+    }
+  </style>
 </body>
 
 </html>
